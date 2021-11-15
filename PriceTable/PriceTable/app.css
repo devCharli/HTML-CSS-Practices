@@ -1,0 +1,131 @@
+:root {
+  --primary-color: #60a9ff;
+  --secondary-color: #888;
+  --dark-blue: #196ff9;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: var(--primary-color);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.pricing-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 0.5px solid rgba(96, 169, 255, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 1rem 3rem;
+}
+
+.pricing-plan:last-child {
+  border-right: none;
+}
+
+img {
+  width: 70%;
+  height: auto;
+}
+
+.pricing-header {
+  padding: 1.6rem 0;
+  color: gray;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.pricing-features {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 1rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.pricing-features-item {
+  padding: 1rem 0;
+  border-top: 1px solid rgba(96, 169, 255, 0.2);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.pricing-features-item:last-child {
+  border-bottom: 1px solid rgba(96, 169, 255, 0.2);
+}
+
+.pricing-price {
+  display: block;
+  padding: 2rem 0;
+  font-size: 2rem;
+  color: var(--dark-blue);
+  font-weight: bold;
+}
+
+.pricing-button {
+  text-decoration: none;
+  border: 1px solid skyblue;
+  cursor: pointer;
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  color: var(--dark-blue);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.pricing-button:hover {
+  color: var(--dark-blue);
+  background-color: rgba(96, 169, 255, 0.3);
+}
+
+.pricing-button.is-featured {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.pricing-button.is-featured:hover {
+  background-color: var(--dark-blue);
+}
+
+@media screen and (max-width: 768px) {
+  .panel {
+    max-width: 100vw;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .pricing-plan {
+    border-right: none;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(96, 169, 255, 0.2);
+    margin-bottom: 1rem;
+    width: 90vw;
+  }
+
+  .pricing-plan:last-child {
+    border-bottom: none;
+  }
+
+  .pricing-features {
+    width: 90vw;
+  }
+}
