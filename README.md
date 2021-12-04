@@ -1,3 +1,3 @@
 # HTML & CSS Practices
 
-- Mastering basic skills...
+- Freecodecamp responsive web design projects
