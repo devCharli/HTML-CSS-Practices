@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.container {
+  background-color: #eee;
+  margin: 3rem 0.8rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* header */
+
+.header h1 {
+  margin-bottom: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+.img__section {
+  background-color: #fff;
+  padding: 1rem;
+  margin: 0;
+}
+
+.img__div {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.img__caption {
+  margin: 1.5rem 0;
+}
+
+/* history */
+
+.history__section {
+  padding: 2rem 6rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.history__title {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.history ul {
+  text-align: left;
+  line-height: 1.5;
+}
+
+.history li {
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+
+/* quote */
+
+.quote {
+  font-style: italic;
+  font-size: 1.6rem;
+  font-weight: 100;
+  margin: 2em 0;
+  padding: 0 2em;
+  text-align: left;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem auto;
+}
+
+footer a:hover {
+  color: blue;
+}
+
+a:visited {
+  color: red;
+}
+
+/* mobie responsive media queries */
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .container {
+    margin: 0;
+  }
+
+  .img__caption {
+    font-size: 1.4rem;
+  }
+
+  .history__section {
+    padding: 1rem 3rem;
+  }
+
+  .footer {
+    font-size: 1.6rem;
+  }
+}
